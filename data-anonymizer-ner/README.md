@@ -1,18 +1,19 @@
 # Data Anonymizer using NER
 
-This project implements a simple data anonymization system using a pre-trained BERT-based Named Entity Recognition model from Hugging Face.
+A simple NLP project that uses Named Entity Recognition (NER) to detect person names in text and replace them with [REDACTED].
 
 ## Features
-- Detects organization and location entities
-- Replaces sensitive data with anonymized labels
-- Fully CPU-based, no training required
+- Detects names using a pre-trained NER model
+- Anonymizes detected names using string manipulation
+- Runs on CPU, no training required
 
 ## Model
-dbmdz/bert-large-cased-finetuned-conll03-english
+dbmdz/bert-large-cased-finetuned-conll03-english (CoNLL-2003)
 
 ## Example
+
 Input:
-The contract was awarded to AlphaTech Solutions in Singapore.
+John signed the agreement on behalf of AlphaTech Solutions in Singapore.
 
 Output:
-The contract was awarded to [ORG] in [LOC].
+[REDACTED] signed the agreement on behalf of AlphaTech Solutions in Singapore.

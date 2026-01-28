@@ -9,11 +9,3 @@ A simple NLP project that uses Named Entity Recognition (NER) to detect person n
 
 ## Model
 dbmdz/bert-large-cased-finetuned-conll03-english (CoNLL-2003)
-
-## Example
-
-Input:
-John signed the agreement on behalf of AlphaTech Solutions in Singapore.
-
-Output:
-[REDACTED] signed the agreement on behalf of AlphaTech Solutions in Singapore.
